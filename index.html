@@ -13,11 +13,13 @@
         <div class="container">
             <h1>Lista Mail</h1>
             <!-- bonus -->
-            <ol v-show="arrayMail.length === 10">
+            <!-- si puù fare anche con il v-show -->
+            <ol v-if="arrayMail.length === 10">
                 <li v-for="(item,idex) in arrayMail">
                     <p>{{item}}</p>
                 </li>
             </ol>
+            <div v-else class="loading">Caricamento lista</div>
         </div>
     </div>
     

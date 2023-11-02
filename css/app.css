@@ -15,6 +15,8 @@ menu {
 .container {
     max-width: 900px;
     margin: 0 auto;
+    padding-top: 80px;
+    position: relative;
 }
 
 
@@ -26,4 +28,12 @@ li {
 p {
     font-size: 20px;
     line-height: 2rem;
+}
+
+.loading {
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+    top: 160px;
+    color: red;
 }
