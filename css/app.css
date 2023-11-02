@@ -1,5 +1,28 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* ul,
+ol,
+menu {
+    list-style: none;
+} */
+
+/* UTILITY CLASS */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+li {
+    border: 1px solid black;
+}
+
+p {
+    font-size: 20px;
+    line-height: 2rem;
 }
