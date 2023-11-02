@@ -65,3 +65,6 @@ createApp ({
 //         // res.data.response contiene la proprietà dell'oggetto del data
 //         console.log(res.data.response);
 //     })
+
+
+
