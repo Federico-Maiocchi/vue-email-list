@@ -19,7 +19,6 @@ menu {
     position: relative;
 }
 
-
 li {
     border: 1px solid black;
     max-width: 300px;
@@ -36,4 +35,27 @@ p {
     position: absolute;
     top: 160px;
     color: red;
+    text-decoration: underline;
+}
+
+.circle-infinite {
+    color: black;
+    display: inline-block;
+    font-size: 60px;
+    animation: loading 1s infinite;
+    animation-timing-function: linear;
+    margin-right: 10px;
+}
+
+@keyframes loading {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+    
+    
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email List</title>
+    <script src="https://kit.fontawesome.com/8258ac6aa5.js" crossorigin="anonymous"></script>
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./css/app.css">
@@ -19,7 +20,7 @@
                     <p>{{item}}</p>
                 </li>
             </ol>
-            <div v-else class="loading">Caricamento lista</div>
+            <div v-else class="loading"><i class="circle-infinite fa-solid fa-spinner"></i> Push and commit</div>
         </div>
     </div>
     
