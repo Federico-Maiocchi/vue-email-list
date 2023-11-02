@@ -13,7 +13,9 @@
         <div class="container">
             <h1>Lista Mail</h1>
             <ol>
-                <li><p>{{mail}}</p></li>
+                <li v-for="(item,idex) in arrayMail">
+                    <p>{{item}}</p>
+                </li>
             </ol>
         </div>
     </div>

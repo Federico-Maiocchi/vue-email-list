@@ -12,26 +12,38 @@ createApp ({
     },
 
     methods: {
+        
+
         fetchMail() {
             axios
-                .get('https://flynn.boolean.careers/exercises/api/random/mail')
-                .then((res) => {
-                    
-                    const emailAddress = res.data.response
-                    this.mail = emailAddress
-                    // console.log(this.mail);
-                    
-                })
+            .get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then((res) => {
+                
+                const emailAddress = res.data.response
+                this.mail = emailAddress
+                // console.log("RISPOSTA SERVER", this.mail);
+
+                this.arrayMail.push(this.mail)
+                console.log(this.arrayMail)   
+            })
         },
 
         
+        getMail(n) {
 
+            for (let i = 0; i < n; i++) {
+                // let currentMail = mail[i];
 
+                // console.log(currentMail);
+                this.fetchMail();
+                // console.log("FOR", i);
+            }
+        }
     },
 
     created() {
         // invoco la funzione axios
-        this.fetchMail()
+        this.getMail(10)
     },
 
     mounted() {
